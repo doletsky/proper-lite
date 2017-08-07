@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="/xmlrpc.php">
-<title>Proper Lite – The perfect multipurpose WordPress theme</title>
+<title>Place to Live</title>
 <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
 <link rel="dns-prefetch" href="https://s.w.org/">
 		<script type="text/javascript">
@@ -99,9 +99,9 @@ img.emoji {
     			<hgroup>
        				<h1 class="site-title">
                     
-                    	<a href="/proper-lite/" title="Proper Lite" rel="home">
-                        
-							Proper Lite                            
+                    	<a href="/proper-lite/" title="Place to Live" rel="home">
+
+                            Place to Live
                     	</a>
                         
                     </h1>
@@ -176,17 +176,17 @@ img.emoji {
     	<div class="hero-content animated fadeInUp delay">
         
         	            
-        		<h2>Made for <em>creatives</em></h2>
+        		<h2>Пространство для <em>жизни</em></h2>
                 
                         
             
                         
-             	<a href="/proper-lite/projects.html" class="featured-link">
+             	<a href="anonces" class="featured-link" id="scroll_to_anonces">
                  
                         
             	                 
                 	<button>
-                        Our Projects                    </button>
+                        Смотреть                    </button>
                 
 				                
                         	</a> 
@@ -202,7 +202,7 @@ img.emoji {
 
 					  
             
-            	<div class="home-widget home-widget-one shortcodes">
+            	<div class="home-widget home-widget-one shortcodes"><a name="anonces"></a>
                 	<div class="grid grid-pad">
                     	<div class="col-1-1">
                 	
@@ -379,17 +379,17 @@ img.emoji {
                         <div class="news-box">
                         	<div class="news-content">
                         		<div>
-                                
-                                
-                                										                                          <div class="news-image" style="background-image: url(./images/stock1.jpg);"></div>
+                                    <a href="/proper-lite/blog_post.html"><div class="news-image" style="background-image: url(./images/stock1.jpg);"></div></a>
+
                                      
                                     
                                                             				<div class="news-info" style="width:25%;"> 
                                                                         
                                     	<div>
-                                    		<h3>A free collection of stock images you can use anywhere.</h3> 
+                                            <a href="/proper-lite/blog_post.html">
+                                                <h3>A free collection of stock images you can use anywhere.</h3></a>
                                         	<h6>April 8, 2015</h6> 
-                        					<a href="/2015/04/08/a-free-collection-of-stock-images-you-can-use-anywhere/">View More</a>
+                        					<a href="/proper-lite/blog_post.html">View More</a>
                                     	</div> 
                                         
                                      
@@ -535,7 +535,17 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/modernthemes.net\/wordpress-demo\/
 /* ]]> */
 </script>
 <script type="text/javascript" src="./js/jscript4.js"></script>
+<script type="text/javascript">
+    jQuery(function($) {
+        $("a#scroll_to_anonces").click(function(){
+            var _href = $(this).attr("href");
+            console.log("a[name='"+_href+"']");
+            $("html, body").animate({scrollTop: $("a[name='"+_href+"']").offset().top+"px"});
+            return false;
+        });
+    });
 
+</script>
 
 
 </body></html>
