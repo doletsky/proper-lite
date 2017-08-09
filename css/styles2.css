@@ -12,6 +12,15 @@ blockquote p{
     blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {
         width: auto;
     }
+    .project-box .project-content span h3{
+        position: relative;
+        z-index: 999999;
+        opacity: 1;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;/*1px 1px 1px #000;*/
+    }
+    .project-content span {
+        vertical-align: top;
+    }
 }
 
 .full-width-image {
