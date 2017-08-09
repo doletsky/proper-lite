@@ -289,6 +289,7 @@
 
 
                 </section>
+                <div id="fin-content"></div>
 
 
 
@@ -388,6 +389,22 @@
 
 
 <script type="text/javascript" src="./js/jscript4.js"></script>
+<script type="text/javascript">
+    jQuery(function($){
+        $(document).ready(function(){
+            var finContentTop=$('#fin-content').position().top;
+            $(window).scroll(function(){
+                if($(window).scrollTop()+$(window).height()>=finContentTop){
+                    $(".grid.grid-pad.overflow:last").after().load("ajax.txt");
+                    finContentTop=$('#fin-content').position().top;
+                    console.log($(window).scrollTop()+$(window).height()>=finContentTop);
+                }
+
+            });
+
+        });
+    });
+</script>
 
 
 
