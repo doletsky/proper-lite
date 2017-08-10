@@ -44,6 +44,32 @@ blockquote p{
     padding: 0 5px;
 }
 
+.search .col-1-1 {
+    margin: 10px 0;
+}
+
+.site-footer {
+    padding: 20px;
+}
+
+.site-footer ul li {
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 70%;
+}
+
+.site-footer ul li a {
+    color: darkgray;
+}
+
+.site-footer input {
+    font-size: 70%;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 3px 5px;
+    text-align: center;
+}
+
 @media handheld, only screen and (max-width: 767px) {
     blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {
         width: auto;
